@@ -84,6 +84,8 @@
             width: 250px;
             display: none;
             border: 1px solid lightgray;
+            border-top: none;
+            box-shadow: 9px 9px 9px 1px #625f5f66;
         }
 
         nav ul{
@@ -104,6 +106,23 @@
         nav ul li.drop-down:hover .sub-menu{
             display: block;
         }
+
+        nav ul li.drop-down::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 12px;
+            right: 5px;
+            border: 7px solid;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: black;
+        }
+
+        nav ul li.drop-down:hover::after{
+            border-left-color: red;
+        }
     </style>
 </head>
 <body>
@@ -123,12 +142,15 @@
     <nav>
         <ul>
             <li>Home</li>
-            <li class="drop-down">Courses
+            <li class="drop-down">
+                <!-- ::before -->
+                Courses
                 <ul class="sub-menu">
                     <li>Direct Entry Program</li>
                     <li>Graduate Software Engineering</li>
                     <li>Adavanced Business Solution Developer</li>
                 </ul>
+                <!-- ::after -->
             </li>
             <li>About Us</li>
             <li>Contact Us</li>
