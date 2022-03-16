@@ -80,6 +80,7 @@
             left: 100%;
             top: 0;
             width: 250px;
+            display: none;
         }
 
         nav ul{
@@ -87,9 +88,18 @@
         }
 
         nav ul li{
+            cursor: pointer;
             padding: 10px;
             text-align: center;
             position: relative;
+        }
+
+        nav ul li:hover{
+            background-color: rgb(238, 238, 238);
+        }
+
+        nav ul li.drop-down:hover .sub-menu{
+            display: block;
         }
     </style>
 </head>
@@ -110,7 +120,7 @@
     <nav>
         <ul>
             <li>Home</li>
-            <li>Courses
+            <li class="drop-down">Courses
                 <ul class="sub-menu">
                     <li>Direct Entry Program</li>
                     <li>Graduate Software Engineering</li>
