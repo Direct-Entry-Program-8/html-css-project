@@ -17,6 +17,10 @@
             clear: both;
         }
 
+        h1{
+            font-size: 2rem;
+        }
+
         header{
             width: 100%;
             height: 75px;
@@ -40,16 +44,24 @@
             top: 75px;
             bottom: 0;
             border-right: 1px solid lightgray;
+            z-index: 2;
         }
 
         main{
             margin-top: 75px;
             margin-left: 200px;
-            background-color: blueviolet;
+            padding: 10px;
+            position: relative;
+            background-color: white;
         }
 
         footer{
-            background-color: brown;
+            margin-top: 10px;
+            /* background-color: brown; */
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-top: 1px solid lightgray;
         }
 
         #social-icons{
@@ -79,8 +91,9 @@
 
         .sub-menu{
             position: absolute;
+            background-color: white;
             left: 100%;
-            top: 0;
+            top: 0;;
             width: 250px;
             display: none;
             border: 1px solid lightgray;
@@ -123,6 +136,27 @@
         nav ul li.drop-down:hover::after{
             border-left-color: red;
         }
+
+        main section:first-child{
+            position: relative;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+
+        main section:first-child{
+            border-bottom: 1px solid lightgray;
+        }
+
+        #bread-crumb{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        main img{
+            margin: 10px;
+            float: right;
+        }
     </style>
 </head>
 <body>
@@ -157,8 +191,15 @@
         </ul>
     </nav>
     <main>
+        <section>
+            <h1>Institute of Software Engineering</h1>
+            <div id="bread-crumb">
+                <a href="index.html">Home</a>
+            </div>
+        </section>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, facilis! Perspiciatis incidunt itaque nemo quos consequuntur quibusdam. Deleniti dolorem corrupti consequatur. Provident eum non architecto autem. Consequuntur nulla consectetur numquam!
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, facilis! Perspiciatis incidunt itaque nemo quos consequuntur quibusdam. Deleniti dolorem corrupti consequatur. Provident eum non architecto autem. Consequuntur nulla consectetur numquam!
+        <img src="https://ijse.lk/images/home/welcome.jpg" alt="">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, facilis! Perspiciatis incidunt itaque nemo quos consequuntur quibusdam. Deleniti dolorem corrupti consequatur. Provident eum non architecto autem. Consequuntur nulla consectetur numquam!
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, facilis! Perspiciatis incidunt itaque nemo quos consequuntur quibusdam. Deleniti dolorem corrupti consequatur. Provident eum non architecto autem. Consequuntur nulla consectetur numquam!
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, facilis! Perspiciatis incidunt itaque nemo quos consequuntur quibusdam. Deleniti dolorem corrupti consequatur. Provident eum non architecto autem. Consequuntur nulla consectetur numquam!
