@@ -22,6 +22,7 @@
             height: 75px;
             position: fixed;
             z-index: 1;
+            background-color: white;
             top: 0;
         }
 
@@ -73,6 +74,23 @@
             background-color: rgb(238, 238, 238);
             border-radius: 50px;
         }
+
+        .sub-menu{
+            position: absolute;
+            left: 100%;
+            top: 0;
+            width: 250px;
+        }
+
+        nav ul{
+            background-color: yellow;
+        }
+
+        nav ul li{
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
     </style>
 </head>
 <body>
@@ -89,7 +107,20 @@
                 <ion-icon name="logo-youtube"></ion-icon></a>
         </div>
     </header>
-    <nav></nav>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Courses
+                <ul class="sub-menu">
+                    <li>Direct Entry Program</li>
+                    <li>Graduate Software Engineering</li>
+                    <li>Adavanced Business Solution Developer</li>
+                </ul>
+            </li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
     <main>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, facilis! Perspiciatis incidunt itaque nemo quos consequuntur quibusdam. Deleniti dolorem corrupti consequatur. Provident eum non architecto autem. Consequuntur nulla consectetur numquam!
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, facilis! Perspiciatis incidunt itaque nemo quos consequuntur quibusdam. Deleniti dolorem corrupti consequatur. Provident eum non architecto autem. Consequuntur nulla consectetur numquam!
